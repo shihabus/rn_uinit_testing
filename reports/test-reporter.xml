@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-    <file path="/Users/shihabudheenus/Documents/jesttest/__tests__/App-test.js">
-        <testCase name="renders correctly" duration="26"/>
-    </file>
-    <file path="/Users/shihabudheenus/Documents/jesttest/src/App.test.js">
-        <testCase name="App fetch" duration="70"/>
-    </file>
     <file path="/Users/shihabudheenus/Documents/jesttest/src/button.test.js">
-        <testCase name="Button Rendering should match to snapshot - Primary" duration="119"/>
-        <testCase name="Button Rendering should match to snapshot - Secondary" duration="2"/>
-        <testCase name="Button Interaction onPressHandler should call onPress" duration="2"/>
+        <testCase name="Button Rendering should match to snapshot - Primary" duration="89"/>
+        <testCase name="Button Rendering should match to snapshot - Secondary" duration="1"/>
+        <testCase name="Button Interaction onPressHandler should call onPress" duration="1"/>
         <testCase name="Button Interaction onPressHandler should call openURL if url is provided" duration="2"/>
         <testCase name="Button Interaction onPressHandler should not call openURL if url is not provided" duration="1"/>
+    </file>
+    <file path="/Users/shihabudheenus/Documents/jesttest/src/App.test.js">
+        <testCase name="App fetch" duration="27"/>
+    </file>
+    <file path="/Users/shihabudheenus/Documents/jesttest/__tests__/App-test.js">
+        <testCase name="renders correctly" duration="12"/>
     </file>
 </testExecutions>

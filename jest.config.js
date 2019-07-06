@@ -9,6 +9,11 @@ module.exports = {
   transformIgnorePatterns: ["node_modules/(?!(jest-)?react-native)"],
   coveragePathIgnorePatterns: ["/node_modules/", "/jest"],
   testResultsProcessor: "jest-sonar-reporter",
+  coverageThreshold: {
+    "global": {
+      "statements": 80
+    }
+  },
   collectCoverageFrom: [
     "**/src/**/*.{js,jsx}",
     "!**/src/**/style.js",
