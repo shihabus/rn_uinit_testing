@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-    <file path="/Users/shihabudheenus/Documents/jesttest/src/button.test.js">
-        <testCase name="Button Rendering should match to snapshot - Primary" duration="89"/>
-        <testCase name="Button Rendering should match to snapshot - Secondary" duration="1"/>
-        <testCase name="Button Interaction onPressHandler should call onPress" duration="1"/>
-        <testCase name="Button Interaction onPressHandler should call openURL if url is provided" duration="2"/>
-        <testCase name="Button Interaction onPressHandler should not call openURL if url is not provided" duration="1"/>
-    </file>
     <file path="/Users/shihabudheenus/Documents/jesttest/src/App.test.js">
-        <testCase name="App fetch" duration="27"/>
+        <testCase name="App fetch" duration="76"/>
+    </file>
+    <file path="/Users/shihabudheenus/Documents/jesttest/src/Display.test.js">
+        <testCase name="Display With props should render" duration="9"/>
+        <testCase name="Display With props Checking PropType it show not throw a warning" duration="1"/>
+    </file>
+    <file path="/Users/shihabudheenus/Documents/jesttest/src/getUser.test.js">
+        <testCase name="Get User fetch a user using axios" duration="2"/>
+    </file>
+    <file path="/Users/shihabudheenus/Documents/jesttest/src/store/reducer.test.js">
+        <testCase name="Reducer Should return default state" duration="1"/>
+        <testCase name="Reducer On receiving a valid type" duration="2"/>
     </file>
     <file path="/Users/shihabudheenus/Documents/jesttest/__tests__/App-test.js">
-        <testCase name="renders correctly" duration="12"/>
+        <testCase name="renders correctly" duration="10"/>
+    </file>
+    <file path="/Users/shihabudheenus/Documents/jesttest/src/button.test.js">
+        <testCase name="Button Rendering should match to snapshot - Primary" duration="14"/>
+        <testCase name="Button Rendering should match to snapshot - Secondary" duration="1"/>
+        <testCase name="Button Interaction onPressHandler should call onPress" duration="1"/>
+        <testCase name="Button Interaction onPressHandler should call openURL if url is provided" duration="0"/>
+        <testCase name="Button Interaction onPressHandler should not call openURL if url is not provided" duration="1"/>
     </file>
 </testExecutions>

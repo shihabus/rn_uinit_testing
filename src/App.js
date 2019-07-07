@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import { Text, View,SafeAreaView,ScrollView } from 'react-native'
+import { Text, View,SafeAreaView,ScrollView,TouchableOpacity } from 'react-native'
 import Data from './fetch/Data'
 import Display from './Display'
-
-export default class App extends Component {
+import User from './User'
+import { connect } from 'react-redux'
+import {ChangeTitle} from './store/action'
+class App extends Component {
     constructor(props){
         super(props)
         this.state={
@@ -25,8 +27,13 @@ export default class App extends Component {
     render() {
         const {isLoading,data}=this.state
         return (
-            <SafeAreaView>
+            <SafeAreaView testID='SafeAreaView'>
                 <Text> Home </Text>
+                <Text style={{fontSize: 25,color:'red'}}>{this.props.title}</Text>
+                <TouchableOpacity testID='TouchableOpacity' onPress={()=>this.props.ChangeTitle('Man')}>
+                    <Text>Click</Text>
+                </TouchableOpacity>
+                <User/>
                 <ScrollView>
                 {!isLoading&&data.map(item=><Display key={item.id} title={item.title}/>)}
                 </ScrollView>
@@ -34,3 +41,10 @@ export default class App extends Component {
         )
     }
 }
+
+const mapStateToProps=({TitleReducer})=>{
+    const {title}=TitleReducer
+    return {title}
+}
+
+export default connect(mapStateToProps,{ChangeTitle})(App);

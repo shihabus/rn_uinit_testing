@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Text, View,ScrollView } from 'react-native'
-
+import PropTypes from 'prop-types';
 export default class Display extends Component {
     constructor(props){
         super(props)
@@ -8,11 +8,14 @@ export default class Display extends Component {
 
     render() {
         const {title}=this.props
-        console.log('Title',title)
         return (
-            <View style={{paddingVertical:5,borderColor:'red',borderWidth:1}}>
-                <Text>Item: {title}</Text>
+            <View style={{paddingVertical:5,borderColor:'red',borderWidth:1}} testID='Display'>
+                <Text testID='title'>Item: {title}</Text>
             </View>
         )
     }
+}
+
+Display.propTypes={
+    title:PropTypes.string
 }
